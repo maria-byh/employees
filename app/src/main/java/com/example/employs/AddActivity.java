@@ -22,6 +22,7 @@ public class AddActivity extends AppCompatActivity {
         email = findViewById(R.id.emailAddress);
         phone = findViewById(R.id.phone);
         addButton = findViewById(R.id.addButton);
+        //pour ajouter une nouvelle liste en cliquant sur le bouton ajouter
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
