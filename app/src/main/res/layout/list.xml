@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#1AF3F3F3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="232dp"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/empId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/_1"
+                android:textColor="@color/purple_200"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/email"
+                app:layout_constraintHorizontal_bias="0.246"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.265" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="262dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/prénom"
+                app:layout_constraintTop_toBottomOf="@+id/prénom"
+                app:layout_constraintVertical_bias="0.053" />
+
+            <TextView
+                android:id="@+id/numtel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/email"
+                app:layout_constraintTop_toBottomOf="@+id/email"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/prénom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:text="TextView"
+                android:textColor="@color/purple_200"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/nom"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/nom"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/nom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="TextView"
+                android:textColor="@color/purple_200"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/prénom"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.113" />
+
+            <ImageButton
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/message"
+                android:minHeight="48dp"
+                app:layout_constraintBottom_toBottomOf="@+id/sendEmail"
+                app:layout_constraintStart_toEndOf="@+id/sendEmail"
+                app:layout_constraintTop_toTopOf="@+id/sendEmail"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/ic_message"
+                app:tint="@color/teal_200" />
+
+            <ImageButton
+                android:id="@+id/sendEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/email"
+                android:minHeight="48dp"
+                app:layout_constraintBottom_toBottomOf="@+id/call"
+                app:layout_constraintStart_toEndOf="@+id/call"
+                app:layout_constraintTop_toTopOf="@+id/call"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/ic_email"
+                app:tint="@color/teal_200" />
+
+            <ImageButton
+                android:id="@+id/edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/edit"
+                android:minHeight="48dp"
+                app:layout_constraintBottom_toBottomOf="@+id/message"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.736"
+                app:layout_constraintStart_toEndOf="@+id/message"
+                app:layout_constraintTop_toTopOf="@+id/message"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/ic_edit"
+                app:tint="#E91E63" />
+
+            <ImageButton
+                android:id="@+id/call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/call"
+                android:minHeight="48dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.913"
+                app:srcCompat="@drawable/ic_call"
+                app:tint="@color/teal_200" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

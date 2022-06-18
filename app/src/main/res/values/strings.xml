@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">employés</string>
+    <string name="todo">TODO</string>
+    <string name="_1">1</string>
+    <string name="call">call</string>
+    <string name="email">email</string>
+    <string name="message">message</string>
+    <string name="edit">edit</string>
+    <string name="delete" />
+    <string name="delet">delete</string>
+    <string name="profession">profession</string>
+</resources>
