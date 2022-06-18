@@ -46,6 +46,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
         holder.lastName.setText(String.valueOf(lastName.get(position)));
         holder.email.setText(String.valueOf(email.get(position)));
         holder.phone.setText(String.valueOf(phone.get(position)));
+        //passer une appel
         holder.call.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -53,7 +54,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
                 activity.startActivityForResult(i, 1);
             }
         });
-
+        //envoyer un mail
         holder.sendEmail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -64,7 +65,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
                 activity.startActivityForResult(intent, 1);
             }
         });
-
+        //envoyer un sms
         holder.message.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -72,7 +73,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
                 activity.startActivityForResult(intent, 1);
             }
         });
-
+        //modifier les informations
         holder.edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
